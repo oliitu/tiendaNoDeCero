@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-100">
+<header id="header" class="bg-pink-200 header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img class="h-10" src="assets/star.png" id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="assets/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h2 class="text-6xl">La mejor tienda online de maquillaje</h2>
+                                <p class="text-s">Envio gratis a partir de $1.500.000</p>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+    <div id="lista-cursos" class="container">
+        <h1 id="encabezado" class="encabezado">Maquillaje</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="assets/corrector10.webp" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Corrector Maybelline</h4>
+                        <img src="assets/estrellas.png">
+                        <p class="precio">$10000  <span class="u-pull-right ">$9500</span></p>
+                        <a href="#" class=" u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="assets/blush.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Blush Rare Beauty</h4>
+                            <img src="assets/estrellas.png">
+                            <p class="precio">$54000  <span class="u-pull-right ">$50000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="assets/dior236.jpeg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Iluminador Dior</h4>
+                            <img src="assets/estrellas.png">
+                            <p class="precio">$236000  <span class="u-pull-right ">$200000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="assets/elf50.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Primer Elf</h4>
+                        <img src="assets/estrellas.png">
+                        <p class="precio">$50000  <span class="u-pull-right ">$45000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="assets/fitme14.jpeg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Base Fit Me</h4>
+                            <img src="assets/estrellas.png">
+                            <p class="precio">$14000  <span class="u-pull-right ">$10000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="assets/mac50.webp" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Delineador Mac</h4>
+                            <img src="assets/estrellas.png">
+                            <p class="precio">$50000  <span class="u-pull-right ">$45000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="assets/sky.webp" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Mascara de Pestañas Sky High</h4>
+                        <img src="assets/estrellas.png">
+                        <p class="precio">$17000  <span class="u-pull-right ">$11000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="assets/vinyl22.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Labial Vinyl Ink</h4>
+                            <img src="assets/estrellas.png">
+                            <p class="precio">$22000  <span class="u-pull-right ">$15000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="assets/pixi101.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Bronzer Pixi</h4>
+                            <img src="assets/estrellas.png">
+                            <p class="precio">$101000  <span class="u-pull-right ">$90000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+       
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#">Para tu Negocio</a>
+                                <a class="enlace" href="#">Conviertete en Instructor</a>
+                                <a class="enlace" href="#">Aplicaciones Móviles</a>
+                                <a class="enlace" href="#">Soporte</a>
+                                <a class="enlace" href="#">Temas</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#">¿Quienes Somos?</a>
+                                <a class="enlace" href="#">Empleo</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
